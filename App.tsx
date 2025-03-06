@@ -42,20 +42,12 @@ import DashBoard1 from './src/screens/Dashboard1/DashBoard1';
 import DashboardImageView from './src/screens/Dashboard/ImageView';
 import { wp } from './src/utils/Responsive';
 import Package from './src/screens/Package/Package';
-import AddInstitute from './src/screens/Institute/components/AddInstitute';
-// import Institute from './src/screens/Institute';
-
-import Institute from './src/screens/Institute';
 import AddCandidate from './src/screens/Candidate/components/AddCandidate';
 import Candidate from './src/screens/Candidate';
 import AddInstituteUser from './src/screens/InstituteUser/components/AddInstituteUser';
 import ViewInstituteUser from './src/screens/InstituteUser/components/ViewInstituteUser';
 import InstituteUser from './src/screens/InstituteUser';
 import EditCandidate from './src/screens/Candidate/components/EditCandidate';
-
-import InstituteDetails from './src/screens/InstituteDetails/InstituteDetails';
-import RoomWithSeat from './src/screens/InstituteDetails/component/RoomWithSeat';
-import SeatDetails from './src/screens/InstituteDetails/component/SeatDetails';
 import LoginView from './src/components/widgets/LoginView';
 import AddRoom from './src/screens/Room/AddRoom';
 import VehicleTrack from './src/screens/Reports/VehicleTrack';
@@ -209,11 +201,7 @@ export default function App() {
           options={options}
         />
 
-        <Stack.Screen name="AddInstitute"
-          component={AddInstitute}
-          initialParams={route.params}
-          options={options}
-        />
+        
 
         <Stack.Screen name="ShowComplaint"
           component={ShowComplaint}
@@ -221,23 +209,11 @@ export default function App() {
           options={options}
         />
 
-        <Stack.Screen name="InstituteDetails"
-          component={InstituteDetails}
-          initialParams={route.params}
-          options={options}
-        />
+       
 
-        <Stack.Screen name="RoomWithSeat"
-          component={RoomWithSeat}
-          initialParams={route.params}
-          options={options}
-        />
+       
 
-        <Stack.Screen name="SeatDetails"
-          component={SeatDetails}
-          initialParams={route.params}
-          options={options}
-        />
+       
 
         
 
@@ -289,11 +265,11 @@ export default function App() {
             <Stack.Screen name="Login" component={Login} />
             <Stack.Screen name="Package" component={Package} />
             <Stack.Screen name="ChangePassword" component={ChangePassword} />
-            <Stack.Screen name="AddInstitute" component={AddInstitute} />
+           
             <Stack.Screen name="AddCandidate" component={AddCandidate} />
             <Stack.Screen name="AddInstituteUser" component={AddInstituteUser} />
-            <Stack.Screen name="Institute" component={Institute} />
-            <Stack.Screen name="Candidate" component={Candidate} />
+            
+            
             <Stack.Screen name="InstituteUser" component={InstituteUser} />
             <Stack.Screen name="ViewInstituteUser" component={ViewInstituteUser} />
             <Stack.Screen name="EditCandidate" component={EditCandidate} />

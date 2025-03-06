@@ -244,7 +244,7 @@ export default DrawerContent = ({props}: any) => {
     );
   };
 
- const toggleHeader = (item:any , index) => {
+ const toggleHeader = (item:any , index:any) => {
     console.log(item?.isCollapse)
    
       const data = [...menu1];
