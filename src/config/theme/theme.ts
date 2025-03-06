@@ -1,0 +1,71 @@
+const SUN_FLOWER = '#f1c40f';
+const ASBESTOS = '#7f8c8d';
+const MIDNIGHT_BLUE = '#2c3e50';
+const EMERALD = '#2ecc71';
+const ALIZARIN = '#e74c3c';
+const CLOUDS = '#ecf0f1';
+const SILVER = '#bdc3c7';
+const WHITE = '#FFFFFF';
+const BLACK = '#000000';
+const ORANGE = '#FF7A1A';
+const BLUE = '#01579B'
+
+const common = {
+    PRIMARY: SUN_FLOWER,
+    SUCCESS: EMERALD,
+    ERROR: ALIZARIN,
+};
+
+const light = {
+    ...common,
+    BACKGROUND: WHITE,
+    CARD_BACKGROUND: WHITE,
+    LABEL_BACKGROUND: ORANGE,
+    HEADER_BACKGROUND: BLUE,
+    DASHBOARD_HEADER_BACKGROUND: WHITE,
+    ICON_COLOR: BLACK,
+    ICON_COLOR2: ORANGE,
+    TEXT: BLACK,
+    TEXT_SECONDARY: ASBESTOS,
+};
+
+const dark = {
+    ...common,
+    BACKGROUND: '#0B2447',
+    CARD_BACKGROUND: '#19376D',
+    LABEL_BACKGROUND: '#576CBC',
+    HEADER_BACKGROUND: '#19376D',
+    DASHBOARD_HEADER_BACKGROUND: BLUE,
+    ICON_COLOR: WHITE,
+    ICON_COLOR2: WHITE,
+    TEXT: WHITE,
+    TEXT_SECONDARY: SILVER,
+};
+
+
+const red = {
+    ...common,
+    BACKGROUND: '#EFFFFD',
+    CARD_BACKGROUND: '#B8FFF9',
+    LABEL_BACKGROUND: '#85F4FF',
+    HEADER_BACKGROUND: '#42C2FF',
+    DASHBOARD_HEADER_BACKGROUND: '#0EA293',
+    ICON_COLOR: BLACK,
+    ICON_COLOR2: BLACK,
+    TEXT: BLACK,
+    TEXT_SECONDARY: SILVER,
+};
+const amaze = {
+    ...common,
+    BACKGROUND: '#131A22',
+    CARD_BACKGROUND: '#131A22',
+    LABEL_BACKGROUND: ORANGE,
+    HEADER_BACKGROUND: '#85CDFD',
+    DASHBOARD_HEADER_BACKGROUND: '#85CDFD',
+    ICON_COLOR: BLACK,
+    ICON_COLOR2: WHITE,
+    TEXT: WHITE,
+    TEXT_SECONDARY: SILVER,
+};
+
+export const colors = { light, dark,red ,amaze};
